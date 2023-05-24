@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+ 
+  /* header : navbar et titre */
+
+
+  h1 {
+    color: #79dbff;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  .navbar {
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .navbar a {
+    color: #e8e6e6;
+    font-weight: 600;
+  }
+
+  .navbar .nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 26rem;
+  }
+
+  li a {
+    background: none;
+    width: 250px;
+    height: 100px;
+    border: 3px solid #79dbff;
+    border-radius: 100%;
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    transition: .4s linear; 
+  }
+
+
+  li a:hover {
+    color: #75fbab;
+    border: 3px solid #75fbab;
+  }
+
+
+
+
+/* Article,*/
+
+  
+.ecran {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/React-Event-Listeners.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .textContainer {
+    position: absolute;
+    top: 77px;
+    left: 9px;
+    width: 30%;
+    color: #79dbff;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: larger;
+    text-shadow: 5px 5px 5px black;
+  }
+
+
+  /* Mes planètes */
+
+
+  .planet-container {
+    overflow: hidden; /* empêche les éléments flottants de sortir du conteneur */
+    display: flex;
+  }
+
+  .planet {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    animation: float 5s linear infinite;
+  }
+  
+  .planet:before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 40px #000;
+    filter: blur(40px);
+  }
+  
+  .planet:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 10px #fff;
+    filter: blur(5px);
+  }
+  
+  .planet span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+  }
+  
+  .planet:nth-child(2n) {
+    animation-duration: 4s;
+    left: 70%;
+    top: 45%;
+  }
+  
+  .planet:nth-child(3n) {
+    animation-duration: 6s;
+    left: 30%;
+    top: 60%;
+  }
+  
+  .planet:nth-child(4n) {
+    animation-duration: 8s;
+    left: 60%;
+    top:30%;
+    background-color: #3a6000;
+  }
+
+  .planet:nth-child(5n) {
+    animation-duration: 8s;
+    left: 80%;
+    top:20%;
+  }
+
+  .planet:nth-child(6n) {
+    animation-duration: 7s;
+    left: 40%;
+    top:70%;
+  }
+
+  .planet:nth-child(6n) {
+    animation-duration: 8s;
+    left: 10%;
+    top: 75%;
+  }
+
+  .planet:nth-child(7n) {
+    animation-duration: 11s;
+    left: 80%;
+    top:70%;
+    background-color:#ffe500;
+  }
+
+
+  .planet:nth-child(8n) {
+    animation-duration: 11s;
+    left: 50%;
+    top:70%;
+  }
+  
+
+
+  img {
+    width: 8rem;
+    margin-top: 10px;
+  }
+
+
+  
+  
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    
+    section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .navbar {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      color: #00ff80;
+      font-weight: bold;
+    }
+  
+
+    .nav-links {
+      width: 37%;
+    }
+
+    .navbar .nav-links ul {
+      display: flex;
+      flex-direction: initial;
+      justify-content: space-between;
+      height: 8.5rem;
+      margin-left: 15%;
+    }
+
+    li a {
+      border-bottom: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;  
+    }
+
+    li a:hover {
+      color: #5f84ec;
+      border: none;
+    }
+
+    .planet {
+      display: none;
+    }
+
+  }
+  

@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+ 
+  /* header : navbar et titre */
+
+
+  h1 {
+    color: #79dbff;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  .navbar {
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .navbar a {
+    color: #e8e6e6;
+    font-weight: 600;
+  }
+
+  .navbar .nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 26rem;
+  }
+
+  li a {
+    background: none;
+    width: 250px;
+    height: 100px;
+    border: 3px solid #79dbff;
+    border-radius: 100%;
+    font-size: 15px;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    transition: .4s linear; 
+  }
+
+
+  li a:hover {
+    color: #75fbab;
+    border: 3px solid #75fbab;
+  }
+
+
+
+  .circle
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 30%;
+    left: 5%;
+    background: linear-gradient(#75fbab, #79dbff);
+    border: 3px solid #f1f1f1;
+    animation: 1s linear infinite alternate boxmagic, 4s linear infinite spin;
+}
+
+
+
+/* Section, ma planète */
+
+
+@keyframes boxmagic
+{
+    from 
+    {
+        box-shadow: 0 0 0 #79dbff, 0 0 0 rgb(117, 251, 171), 0 0 0 rgb(96, 86, 233);
+    }
+    to
+    {
+        box-shadow: 0 -10px 0 #79dbff, -10px 0 0 rgb(27, 255, 183), -10px 0 0 rgb(96, 86, 233);
+    }
+
+}
+
+@keyframes spin
+{
+    form
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes sliDown
+{
+    from
+    {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateY(0);
+        opacity: 5; 
+    } 
+}
+
+
+
+/* Article, ma carte */
+
+  
+  .ecran {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bgReact.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carte img {
+    width: 30%;
+    border-radius: 100px;
+  }
+  
+  .carte h2 {
+    font-size: 50px;
+    font-weight: 600px;
+    margin-top: 20px;
+    color: #e8e6e6;
+  }
+  
+  .carte p {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #e8e6e6;
+  }
+  
+  .carte {
+    text-align: center;
+    width: 90%;
+    max-width: 440px;
+    color: aliceblue;
+    text-align: center;
+    padding: 50px 30px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(20px);
+    opacity: 0.9;
+  }
+  
+  .carte .reseau .fa-brands {
+    width: 40px;
+    border-radius: 50px;
+    margin: 10px 5px;
+    font-size: xxx-large;
+    color: rgb(66, 214, 214);
+    transition: color 0.3s;
+  }
+  
+  .carte .reseau .fa-brands:hover {
+    color: rgb(0, 48, 48);
+  }
+  
+  .reseau {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .buttonCv {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background:linear-gradient(#01526a,#79dbff);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 0 10px;
+  }
+  
+  .buttonCv:hover {
+    transition: 300ms;
+    opacity: 0.8;
+  }
+
+
+  /* Responsive */
+
+  @media screen and (max-width: 1000px) {
+
+    
+
+    .navbar {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+      margin-left: 3rem;
+      width: 80%;
+    }
+
+    .nav-links {
+      width: 37%;
+    }
+
+    .navbar .nav-links ul {
+      display: flex;
+      flex-direction: initial;
+      justify-content: space-between;
+      height: 8.5rem;
+      margin-left: 15%;
+    }
+
+    li a {
+      border-bottom: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+    }
+
+    li a:hover {
+      color: #75fbab;
+      border: none;
+    }
+
+    .circle
+  {
+    display: none;
+  }
+
+  .carte {
+    padding: 9px 18px;
+    margin-top: 8rem;
+  }
+
+    
+}
+  
