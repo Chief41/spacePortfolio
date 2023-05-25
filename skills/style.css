@@ -262,8 +262,77 @@
       border: none;
     }
 
+    p {
+      color: #00ff80;
+    }
+
     .planet {
-      display: none;
+      display: flex;
+      animation: none;
+      left: 5%;
+      top: 50%;
+    }
+
+
+    .planet:nth-child(2n) {
+      animation-duration: 4s;
+      left: 77%;
+      top: 50%;
+    }
+    
+    .planet:nth-child(3n) {
+      animation-duration: 6s;
+      left: 55%;
+      top: 50%;
+    }
+    
+    .planet:nth-child(4n) {
+      animation-duration: 8s;
+      left: 30%;
+      top:50%;
+      background-color: #3a6000;
+    }
+  
+    .planet:nth-child(5n) {
+      animation-duration: 8s;
+      left: 75%;
+      top: 75%;
+    }
+  
+    .planet:nth-child(6n) {
+      animation-duration: 7s;
+      left: 70%;
+      top: 75%;
+    }
+  
+    .planet:nth-child(6n) {
+      animation-duration: 8s;
+      left: 5%;
+      top: 75%;
+    }
+  
+    .planet:nth-child(7n) {
+      animation-duration: 11s;
+      left: 30%;
+      top: 75%;
+      background-color:#ffe500;
+    }
+  
+  
+    .planet:nth-child(8n) {
+      animation-duration: 11s;
+      left: 52%;
+      top: 75%;
+    }
+    
+
+    .textContainer {
+      width: 90%;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(30px);
+      text-align: center;
+      margin-top: 50px;
+      margin-left: 20px;
     }
 
   }
