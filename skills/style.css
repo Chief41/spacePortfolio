@@ -34,7 +34,8 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 26rem;
+    width: 100%;
+    gap: 7px;
   }
 
   li a {
@@ -222,13 +223,11 @@
     }
 
     .navbar {
-      padding: 30px;
+      padding: 30px; 
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
     .navbar a {
@@ -238,7 +237,8 @@
   
 
     .nav-links {
-      width: 37%;
+      width: 100%;
+      margin-top: 10px;
     }
 
     .navbar .nav-links ul {
@@ -246,7 +246,6 @@
       flex-direction: initial;
       justify-content: space-between;
       height: 8.5rem;
-      margin-left: 15%;
     }
 
     li a {
@@ -269,60 +268,52 @@
     .planet {
       display: flex;
       animation: none;
-      left: 5%;
+      left: 0%;
       top: 50%;
     }
 
 
     .planet:nth-child(2n) {
-      animation-duration: 4s;
-      left: 77%;
+      left: 76%;
       top: 50%;
     }
     
     .planet:nth-child(3n) {
-      animation-duration: 6s;
-      left: 55%;
+      left: 50%;
       top: 50%;
     }
     
     .planet:nth-child(4n) {
-      animation-duration: 8s;
-      left: 30%;
+      left: 25%;
       top:50%;
       background-color: #3a6000;
     }
   
     .planet:nth-child(5n) {
-      animation-duration: 8s;
-      left: 75%;
+      left: 73%;
       top: 75%;
     }
   
     .planet:nth-child(6n) {
-      animation-duration: 7s;
       left: 70%;
       top: 75%;
     }
   
     .planet:nth-child(6n) {
       animation-duration: 8s;
-      left: 5%;
+      left: 10%;
       top: 75%;
     }
   
     .planet:nth-child(7n) {
-      animation-duration: 11s;
-      left: 30%;
+      left: 40%;
       top: 75%;
       background-color:#ffe500;
     }
   
   
     .planet:nth-child(8n) {
-      animation-duration: 11s;
-      left: 52%;
-      top: 75%;
+      display: none;
     }
     
 

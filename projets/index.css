@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 26rem;
+    gap: 7px;
   }
 
   li a {
@@ -268,32 +268,119 @@
 @media screen and (max-width: 1000px) {
   
   .textDescription {
-    width: 90%;
+    width: 100%;
     background: rgba(255,255,255,0.2);
     backdrop-filter: blur(30px);
     text-align: center;
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-bottom: 16px;
+    margin-left: 68px;
+    margin-right: 8px;
   }
   
-  .astronaut-1  {
-    display: none;
+  
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .astronaut-2 {
-    display: none;
+  .navbar {
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
   }
 
-  .astronaut-3 {
-    display: none;
+  .navbar a {
+    color: #00ff80;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar .nav-links ul {
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-between;
+    height: 8.5rem;
+  }
+
+  li a {
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;  
+  }
+
+  li a:hover {
+    color: #5f84ec;
+    border: none;
   }
 
   .moon {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #F5F5DC;
+    border-radius: 50%;
+    top: -180px;
+    right: 287px;
+  }
+
+  .moon::before {
     display: none;
   }
 
   .circle {
-    display: none;
+    top: 95px;
+    left: 271px;
+    width: 46px;
+    height: 45px;
+  }
+
+  .astronaut-1 {
+    top: 559px;
+    left: -293px;
+    width: 57px;
+    height: 88px;
+}
+
+  .astronaut-2 {
+    top: 515px;
+    right: 114px;
+    width: 57px;
+    height: 69px;
+  }
+
+  .astronaut-3 {
+    top: 657px;
+    left: -300px;
+    width: 60px;
+    height: 58px;
+    animation: astronaut-float 20s infinite;
+  }
+
+  .astronaut-link {
+    
+    transform-origin: 20px 120px;
+  }
+
+  @keyframes astronaut-float {
+    0% {
+      transform: translate(0, 0) rotate(0);
+    }
+    50% {
+      transform: translate(100px, -50px) rotate(20deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0);
+    }
   }
 }
 

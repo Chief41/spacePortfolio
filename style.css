@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 26rem;
+    gap: 7px;
   }
 
   li a {
@@ -225,7 +225,7 @@
     }
 
     .nav-links {
-      width: 37%;
+      width: 100%;
     }
 
     .navbar .nav-links ul {
@@ -233,7 +233,7 @@
       flex-direction: initial;
       justify-content: space-between;
       height: 8.5rem;
-      margin-left: 15%;
+      gap: 7px;
     }
 
     li a {
