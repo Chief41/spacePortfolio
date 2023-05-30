@@ -246,20 +246,27 @@
     article {
       flex-wrap: wrap;
       flex-direction: column-reverse;
-      margin-top: 65rem;
+      margin-top: 84rem;
       justify-content: space-around;
     }
 
     .presentation {
-      width: 95%;
-      margin-left: 2px;
+      width: 76%;
+      margin-right: 2px;
     }
 
     
 
     .jeu {
-      width: 430px;
+      width: 450px;
     }
+
+    .navbar .nav-links ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      width: 23rem;
+  }
   }
 
   @media (min-width: 700px) and (max-width: 1150px) {

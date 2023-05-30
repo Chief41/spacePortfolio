@@ -119,14 +119,6 @@
   animation: astronaut-floatTres 14s infinite;
 }
 
-.astronaut-3 {
-  background-image: url('../images/astro3.png');
-  background-size: cover;
-  top: 161px;
-  left: -413px;
-  animation: astronaut-float 25s infinite;
-}
-
 @keyframes astronaut-float {
   0% {
     transform: translate(0, 0) rotate(0);
@@ -358,13 +350,6 @@
     height: 69px;
   }
 
-  .astronaut-3 {
-    top: 657px;
-    left: -300px;
-    width: 60px;
-    height: 58px;
-    animation: astronaut-float 20s infinite;
-  }
 
   .astronaut-link {
     
